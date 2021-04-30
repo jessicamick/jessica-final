@@ -23,6 +23,13 @@
       "array": "books",
       "slug": "slug",
       "path": "books"
+    },
+        {
+      "template": "bake-queen",
+      "data": "queen",
+      "array": "members",
+      "slug": "slug",
+      "path": "members"
     }
   ]
 }
