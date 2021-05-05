@@ -9,10 +9,10 @@
   <div class="row">
   {% for album in queen.discography %}
     <div class="col-sm-6 col-lg-4">
-      <div class="card mb-5">
+      <div class="card text-light bg-dark mb-5">
         <div class="card-body">
           <img src="img/discs/{{ album.image }}" class="card-img-top" alt="album art">
-          <h5 class="card-title">{{ album.title }}</h5>
+          <h5 class="card-title mt-3">{{ album.title }}</h5>
           <p class="card-text">{{ album.year }}</p>
         </div>
       </div>
