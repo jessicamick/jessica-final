@@ -4,12 +4,12 @@
 
 {% block content %}
 <article class="container">
-  <h1>Discography</h1>
-  <p>Intro text here.</p>
+  <h1 class="headline">Discography</h1>
+  <p class="mt-2 mb-4">These are Queen's original 15 albums from 1973-1995, not including live albums.</p>
   <div class="row">
   {% for album in queen.discography %}
     <div class="col-sm-6 col-lg-4">
-      <div class="card mb-3">
+      <div class="card mb-5">
         <div class="card-body">
           <img src="img/discs/{{ album.image }}" class="card-img-top" alt="album art">
           <h5 class="card-title">{{ album.title }}</h5>
