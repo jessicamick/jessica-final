@@ -11,18 +11,23 @@
       <p>-Source: <a href="https://en.wikipedia.org/wiki/Queen_(band)">Wikipedia</a><p>
     </div>
   </div>
-    <h2 class="headline mt-2">Original Members of Queen</h2>
+    
+    <h2 class="headline mt-4">Original Members of Queen</h2>
     <div class="row">
       {% for member in queen.members %}
-        <div class="col-sm-6 col-lg-3">
+        <div class="col-sm-6 col-lg-3 mt-2 mb-3">
           <img src="img/members/{{ member.image }}" alt="{{ member.name }}" class="img-fluid">
-          <h3><a href="members/{{ member.slug }}.html">{{ member.name }}</a></h3>
-          <h6>{{ member.instruments }}</h6>
-        </div>
+            <div class="card text-light bg-dark">
+             <div class="card-body">
+              <h3><a class="card-title mt-3" href="members/{{ member.slug }}.html">{{  member.name }}</a></h3>
+              <h6 class="card-text">{{ member.instruments }}</h6>
+              </div>
+            </div>
+          </div>
       {% endfor %}
     </div>
      
-    <h2 class="headline mt-4">Tour Dates</h2>
+    <h2 class="headline mt-5">Tour Dates</h2>
     <table class="table table-striped">
       <thead>
         <tr>
